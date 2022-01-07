@@ -11,4 +11,10 @@ fun main(){
 
     saldo += 200.0
     println("Saldo $saldo")
+
+    when {
+        saldo > 0.0 -> println("conta é positiva")
+        saldo == 0.0 -> println("conta é neutra")
+        else -> println("conta é negativa")
+    }
 }
