@@ -27,6 +27,8 @@ fun main(){
 
     contaMarcelo.depositar(50.0)
     println("Saldo: ${contaMarcelo.saldo}")
+    contaMarcelo.sacar(350.0)
+    println("Saldo: ${contaMarcelo.saldo}")
 
 }
 
