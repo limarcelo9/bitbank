@@ -12,9 +12,18 @@ fun main(){
     saldo += 200.0
     println("Saldo $saldo")
 
-    for(i in 1..5){
+    for(i in 5 downTo 1 step 2){
         testarCondicoes(saldo, i)
     }
+
+    var contaMarcelo = Conta()
+    contaMarcelo.titular = "Marcelo Lima de Souza"
+    contaMarcelo.conta = 1000
+    contaMarcelo.saldo = 5000.00
+
+    println(contaMarcelo.titular)
+    println(contaMarcelo.conta)
+    println(contaMarcelo.saldo)
 
 
 }
