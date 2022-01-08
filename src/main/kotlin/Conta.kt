@@ -1,34 +1,14 @@
 class Conta() {
-    private var titular: String = ""
-    private var conta: Int = 0
-    private var saldo: Double = 0.0
-
-    fun getTitular(): String {
-        return this.titular
-    }
-
-    fun getConta(): Int {
-        return this.conta
-    }
-
-    fun getSaldo(): Double {
-        return this.saldo
-    }
-
-    fun setTitular(titular: String) {
-        this.titular = titular
-    }
-
-    fun setConta(conta: Int) {
-        this.conta = conta
-    }
-
-    fun setSaldo(saldo: Double) {
-        this.saldo = saldo
-    }
+    var titular = ""
+    var conta = 0
+    var saldo = 0.0
+        private set
 
     fun depositar(valor: Double){
-        this.saldo += valor
+        if(valor > 0) {
+            this.saldo += valor
+        }
+
     }
 
     fun sacar(valor: Double){

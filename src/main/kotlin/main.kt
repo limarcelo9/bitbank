@@ -19,7 +19,7 @@ fun main(){
     var contaMarcelo = Conta()
     contaMarcelo.titular = "Marcelo Lima de Souza"
     contaMarcelo.conta = 1000
-    contaMarcelo.saldo = 5000.00
+    contaMarcelo.depositar(5000.00)
 
     println("Titular: ${contaMarcelo.titular}")
     println("Conta: ${contaMarcelo.conta}")
