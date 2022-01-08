@@ -21,10 +21,12 @@ fun main(){
     contaMarcelo.conta = 1000
     contaMarcelo.saldo = 5000.00
 
-    println(contaMarcelo.titular)
-    println(contaMarcelo.conta)
-    println(contaMarcelo.saldo)
+    println("Titular: ${contaMarcelo.titular}")
+    println("Conta: ${contaMarcelo.conta}")
+    println("Saldo: ${contaMarcelo.saldo}")
 
+    contaMarcelo.depositar(50.0)
+    println("Saldo: ${contaMarcelo.saldo}")
 
 }
 
