@@ -16,9 +16,7 @@ fun main(){
         testarCondicoes(saldo, i)
     }
 
-    var contaMarcelo = Conta()
-    contaMarcelo.titular = "Marcelo Lima de Souza"
-    contaMarcelo.conta = 1000
+    var contaMarcelo = Conta("Marcelo Lima de Souza", 1000)
     contaMarcelo.depositar(5000.00)
 
     println("Titular: ${contaMarcelo.titular}")
